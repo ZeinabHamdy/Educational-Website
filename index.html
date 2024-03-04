@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edu Website</title>
+    <title>Educational Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="assets/logo.svg " style="color:red;" />
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -11,172 +11,347 @@
 </head>
 <body>  
 
-    <div class="home" >
+    <div class="nav-out">
+        <nav class="container navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" alt="logo" style="width: 50px; height: 50px;">
+            </a>
+            <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <div class="nav-item col cx" ><a class="nav-divnk " href="index.html">Home</a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#about">About </a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#category">Category</a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#courses">Courses</a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#pricing">Pricing</a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#reviews">Reviews</a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#blogs">Blogs</a></div>
+                <div class="nav-item col cx" ><a class="nav-divnk " href="#contact">Contact </a></div>
+            </div>
+        </nav>
+    </div>
+    
+
+    <div class="container">
+
+        <header class="about" id="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/header.webp" alt="learn" class="img-fluid" >
+                </div>
+                <div class="col-md-6">
+                    <h1 class="header-title">Learn on your schedule</h1>
+                    <p class="header-text">Study any topic, anytime. Choose from thousands of expert-led courses now.</p>        
+                    <div class="header-btn">
+                        <button>Get Started</button>
+                        <button>Learn More</button>    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-lg-3  col-sm-12 card-in">
+                    <i class="bi bi-book"></i>
+                    <h2> Online Courses</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit officia inventore consequuntur .</p>
+                </div>
+                <div class="col-md-5 col-lg-3  col-sm-12 card-in">
+                    <i class="bi bi-patch-check " ></i>
+                    <h2> become expert</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit officia inventore consequuntur .</p>
+                </div>
+                <div class="col-md-5 col-lg-3  col-sm-12 card-in">
+                    <i class="bi bi-people-fill"></i>
+                    <h2> Earn  Certificates</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit officia inventore consequuntur .</p>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="category" class="category">
+            <h1 class="category-title">Browse by Categories</h1>
+            <p class="category-text"> We have many courses in many fields </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/user-secret-solid.svg" alt="arts" >
+                    <h2> Security</h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/palette-solid.svg" alt="arts" >
+                    <h2> Design </h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/code-solid.svg" alt="arts" >
+                    <h2> Coding</h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/scale-balanced-solid.svg" alt="arts" >
+                    <h2> Law</h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/heart-pulse-solid.svg" alt="arts" >
+                    <h2> Health </h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/clock-rotate-left-solid.svg" alt="arts" >
+                    <h2> History</h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/music-solid.svg" alt="arts" >
+                    <h2> Music</h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-sm-5">
+                    <img src="assets/money-bill-trend-up-solid.svg" alt="arts" >
+                    <h2> Marketing</h2>
+                    <p class="courses"> 20 courses </p>
+                </div>
+                
+                    
+
+            </div>
+        </section>
+
+
+        <section id="courses" class="courses">
+            <h1 class="courses-title">Our Courses</h1>
+            <p class="courses-text"> We have many courses in many fields </p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/html5.svg" alt="course" width="150px" height="150px">
+                            <h2 class="card-title"> HTML </h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p class="instructor"> by Zainab Hamdy</p>
+                            <p class="price" > $199</p>
+                            <button class="button">Enroll Now</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/css3-alt.svg" alt="course" width="150px" height="150px">
+                            <h2 class="card-title">CSS</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p class="instructor"> by Zainab Hamdy</p>
+                            <p class="price"> $199</p>
+                            <button class="button">Enroll Now</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-md-6 col-lg-4  col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/js.svg" alt="course" width="150px" height="150px">
+                            <h2 class="card-title">JS</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p class="instructor"> by Zainab Hamdy</p>
+                            <p class="price"> $199</p>
+                            <button class="button">Enroll Now</button>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pricing" id="pricing">
+            <h1 class="pricing-title">Pricing</h1>
+            <p class="pricing-text"> We have many courses in many fields </p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"> BASIC</h2>
+                            <p class="price" > $100 </p>
+                            <span> / month</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button class="button">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"> BEGINNER</h2>
+                            <p class="price" > $300  </p>
+                            <span> / month</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button class="button">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title"> PREMIUM</h2>
+                            <p class="price" > $900 </p>
+                            <span> / month</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button class="button">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h1 class="reviews-title">Reviews</h1>
+            <p class="reviews-text"> What our students say about us </p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img src="assets/person.webp" alt="person" class="person">
+                        <h2 class="card-title"> Zainab Hamdy</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="data">
+                            <img src="assets/calendar-days-solid.svg" alt ="date"  >
+                            <p> 2/3/2024</p>
+                            <img src="assets/comments-solid.svg" alt="comments" style="margin-left:20px" >
+                            <p> 37 </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img src="assets/person.webp" alt="person" class="person">
+                        <h2 class="card-title"> Zainab Hamdy</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="data">
+                            <img src="assets/calendar-days-solid.svg" alt ="date"  >
+                            <p> 4/2/2024</p>
+                            <img src="assets/comments-solid.svg" alt="comments" style="margin-left:20px" >
+                            <p> 10 </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img src="assets/person.webp" alt="person" class="person">
+                        <h2 class="card-title"> Zainab Hamdy</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="data">
+                            <img src="assets/calendar-days-solid.svg" alt ="date"  >
+                            <p> 1/3/2024</p>
+                            <img src="assets/comments-solid.svg" alt="comments" style="margin-left:20px" >
+                            <p> 2 </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogs" id="blogs">
+            <h1 class="blogs-title">Blogs</h1>
+            <p class="blogs-text"> Read our latest blogs </p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img src="assets/blog.jpg" alt="blog" class="person">
+                        <h2 class="card-title"> Explain Problem X</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="data">
+                            <img src="assets/calendar-days-solid.svg" alt ="date"  >
+                            <p> 4/3/2024</p>
+                            <img src="assets/comments-solid.svg" alt="comments" style="margin-left:20px" >
+                            <p> 15 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img src="assets/blog.jpg" alt="blog" class="person">
+                        <h2 class="card-title"> Explain Problem Y</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="data">
+                            <img src="assets/calendar-days-solid.svg" alt ="date"  >
+                            <p> 2/3/2024</p>
+                            <img src="assets/comments-solid.svg" alt="comments" style="margin-left:20px" >
+                            <p> 20 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <img src="assets/blog.jpg" alt="blog" class="person">
+                        <h2 class="card-title"> Explain Problem Z</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="data">
+                            <img src="assets/calendar-days-solid.svg" alt ="date"  >
+                            <p> 1/3/2024</p>
+                            <img src="assets/comments-solid.svg" alt="comments" style="margin-left:20px" >
+                            <p> 10 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="contact-title">Contact Us</h1>
+            <p class="contact-text"> We are here to help you </p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </section>
+
+    </div>
+    
+
+    <div class="footer-out">
         <div class="container">
-
-            <!-- start in navbar -->
-            <nav class="navbar navbar-expand-md navbar-light " >
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logo.svg" alt="logo" style="width: 50px; height: 50px;">
-                </a>
-                <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="index.html">Home</a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#about">About </a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#category">Category</a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#courses">Courses</a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#">Pricing</a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#">Reviews</a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#">Blog</a></div>
-                    <div class="nav-item col cx" ><a class="nav-divnk " href="#">Contact </a></div>
+            <div class="row">
+                <div class="col-md-4  col-sm-12">
+                    <ul>
+                        <div ><a href="index.html">Home</a></div>
+                        <div ><a href="#about">About </a></div>
+                        <div ><a href="#category">Category</a></div>
+                        <div ><a href="#courses">Courses</a></div>
+                    </ul>
                 </div>
-            </nav>
-            <!-- end of navbar -->
-
-
-            <!-- start of header =>( hedaer=about) -->
-            <header class="header" id="about">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <img src="assets/header.jpg" alt="header" class="header-img"  >
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <h1 class="header-title">Learn on your schedule</h1>
-                        <p class="header-para">Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
-                        <button class="btn btn-primary">Start 7 days free trial</button>
-                    </div>
+                <div class="col-md-4  col-sm-12">
+                    <ul>
+                        <div ><a href="#pricing">Pricing</a></div>
+                        <div ><a href="#reviews">Reviews</a></div>
+                        <div ><a href="#blogs">Blogs</a></div>
+                        <div ><a href="#contact">Contact </a></div>
+                    </ul>
                 </div>
-            </header>
-            <!-- end of header -->
-
-
-            <!-- start of category -->
-            <section class="category" id="category">
-                <h1 class="category-title">Popular Categories</h1>
-                <p class="about-category">We have a lot of popular Categories in different fields</p>   
-
-                <div class="cards">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/programming.avif" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title">Programming</h3>
-                                <p class="card-para">Learn programming from scratch to advanced level</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/medicine.avif" alt="medicine" class="card-img-top" height=200px>
-                                <h3 class="card-title"> Medicine</h3>
-                                <p class="card-para">Learn medicine from scratch to advanced level</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/market.jpg" alt="market" class="card-img-top" height=200px>
-                                <h3 class="card-title">Online Marketing</h3>
-                                <p class="card-para">Learn market from scratch to advanced level</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/languages.avif" alt="languages" class="card-img-top" height=200px>
-                                <h3 class="card-title"> Languages</h3>
-                                <p class="card-para">Learn languages from scratch to advanced level</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/math.jpg" alt="math and logic" class="card-img-top" height=200px>
-                                <h3 class="card-title"> Math and Logic</h3>
-                                <p class="card-para">Learn Math & Logic from scratch to advanced level</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/health.jpg" alt="health" class="card-img-top" height=200px>
-                                <h3 class="card-title">Health Care</h3>
-                                <p class="card-para">Learn about Health care </p>
-                            </div>
-                        </div>
-                        
-                    </div>
+                <div class="col-md-4  col-sm-12">
+                    <ul>
+                        <div ><a href="#">Privacy Policy</a></div>
+                        <div ><a href="#">Terms of Service</a></div>
+                        <div ><a href="#">Sitemap</a></div>
+                    </ul>
                 </div>
-
-            </section>
-            <!-- end of category -->
+                   
+            </div>
             
-
-
-            <!-- start courses -->
-            <section class="courses" id ="courses">
-                <h1 class="courses-title">Popular Courses</h1>
-                <p class="about-courses">We have a lot of popular Courses in each field</p>   
-
-                <div class="cards">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/course1.jpg" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title">HTML & CSS</h3>
-                                <p class="card-para">Learn from scratch to advanced level</p>
-                                <p class="price"> 199.99$ <del>210$</del></p>
-                                <button class="button"> Buy now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/course2.jpg" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title"> PHP</h3>
-                                <p class="card-para">Learn from scratch to advanced level</p>
-                                <p class="price"> 199.99$ <del>210$</del></p>
-                                <button class="button"> Buy now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/course3.jpg" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title">Software Engineering</h3>
-                                <p class="card-para">Learn from scratch to advanced level</p>
-                                <p class="price"> 199.99$ <del>210$</del></p>
-                                <button class="button"> Buy now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/course4.jpg" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title"> UI/UX development </h3>
-                                <p class="card-para">Learn  from scratch to advanced level</p>
-                                <p class="price"> 199.99$ <del>210$</del></p>
-                                <button class="button"> Buy now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/course5.jpg" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title"> Mobile application </h3>
-                                <p class="card-para">Learn from scratch to advanced level</p>
-                                <p class="price"> 199.99$ <del>210$</del></p>
-                                <button class="button"> Buy now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <img src="assets/course6.jpg" alt="programming" class="card-img-top" height=200px>
-                                <h3 class="card-title"> Full Stack development</h3>
-                                <p class="card-para"> Learn from scratch to advanced level </p>
-                                <p class="price"> 199.99$ <del>210$</del></p>
-                                <button class="button"> Buy now</button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <!-- end courses -->
-
+            <div class="col-md-12 col-lg-12 col-sm-12 Zainab">
+                <p> &copy; Zainab Hamdy</p>
+            </div>
         </div>
     </div>
 

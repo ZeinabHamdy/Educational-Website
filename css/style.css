@@ -1,13 +1,14 @@
 :root{
-    --main-color:#007bff;
-    --secondary-color:#f8f9fa;
+    --main-color:#1eb2a6;
+    --secondary-color:#f8f8f8;
     --black: #343a40;
+    --white: #FFF;
+    --border-radius: 15px;
     
 }
 
 *{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
-    color: var(--black);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,132 +16,335 @@
     --moz-box-sizing: border-box;
     --ms-box-sizing: border-box;
     --o-box-sizing: border-box;
-    --border-radius: 15px;
+    color: var(--black);
+
     
 }
 
+div {
+    border-radius: 0px !important;
+}
 
 
-nav .cx{
-    margin-left:-5px;
+body{
+    background-color: var(--secondary-color);
 }
-nav a img:hover{
-    transform: scale(1.05);
-}
-.container nav{
+
+.nav-out {
+    background-color: var(--white);
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
     z-index: 1000;
-    background-color: white;
-    box-shadow: 0px 3px var(--secondary-color);
+
 }
 
-.container nav .navbar-toggler{
-    outline-color: var(--main-color);
+.nav-out nav{
+    box-shadow: 0px 2px var(--main-color);
+}
+
+nav div a{
+    color: var(--main-color);
+    font-weight: bold;
+    transition: 0.2s; ;
+}
+nav div a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+.about {
+    padding-top: 100px;
+    color: var(--black)
+}
+
+.about .header-title{
+    margin-top: 20px;
+}
+
+/*  header => 40px */
+
+
+.about button{
+    margin-top: 20px;
+}
+
+.about .card-in {
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--main-color);
+    transition: 0.2s;
+    margin: 50px auto;
     color: var(--main-color)
 }
-nav .cx a:hover{
-    text-decoration: none;
-    color: var(--main-color);
-    font-size: 1.1em;
+.about .card-in h2{
+    font-size: 30px;
 }
-
-header  , 
-.container .category ,
-.container .courses{
-    padding-top: 100px;
-}
-
-header .header-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-}
-
-header .row  :nth-child(2){
-    margin-top:40px;
-}
-
-.category h1 , 
-.category .about-category ,
-.courses h1 ,
-.courses .about-courses{
-    text-align: center;
-}
-.category .about-category ,
-.courses .about-courses{
-    margin-bottom: 50px;;
-}
-.category h1 ,
-.courses h1{
-    font-size: 40px;;
-}
-
-.category .row .card{
-	height: 350px;
-}
-.courses .row .card{
-	height: 400px;
-}
-.category .row .card ,
-.courses .row .card{
-    margin: 30px 10px;
-    border-radius: var(--border-radius);
-    transition: .04s ease-in;
-}
-.category img ,
-.courses img{
-    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-}
-
-
-.courses .button{
-    width: 100px;
-    height: 40px;
-    border-radius: var(--border-radius);
+.about .card-in:hover{
     background-color: var(--main-color);
-    border: none;
-    margin: 0px auto;
-    transition: 0.2s;
+    color: var(--white);
+    cursor: pointer;
+}
+.about .card-in:hover i {
+    color: var(--white);
 }
 
 
-.courses .button:hover{
-    transform: scale(1.05);
+.about .card-in i{
+    font-size: 40px;
+    display: inline-block;
+    color: var(--main-color);
+}
+button{
+    border: 1px solid var(--main-color);
+    background-color: var(--white);
+    color: var(--main-color);
+    padding: 10px 20px;
+    transition: 0.2s;
+    display:inline-block
+}
+button:hover{
+    background-color: var(--main-color);
+    color: var(--white);
     cursor: pointer;
 }
 
 
-.courses .price{
-    margin-top: -10px;
+
+
+.category , 
+.courses ,
+.pricing ,
+.reviews,
+.blogs ,
+.contact{
+    padding-top: 80px;
+   
+
 }
-.courses del{
-    color: red;
+
+.category .row div{
+    margin: 20px ;
+    height: 300px;
+    background-color: var(--white);
+}
+
+.category .category-title ,
+.courses .courses-title ,
+.pricing .pricing-title ,
+.reviews .reviews-title ,
+.blogs .blogs-title ,
+.contact .contact-title{
+    margin-bottom: 20px;
+    color: var(--main-color)
+}
+
+.category .category-text ,
+.category .category-title ,
+.courses .courses-text ,
+.courses .courses-title ,
+.pricing .pricing-text ,
+.pricing .pricing-title,
+.reviews .reviews-text ,
+.reviews .reviews-title,
+.blogs .blogs-text,
+.blogs .blogs-title ,
+.contact .contact-text,
+.contact .contact-title{
+    text-align: center;
+}
+
+.category .row div h2{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--main-color)
+}
+
+.category .row div img{
+    width: 80px;
+    height: 80px;
+    margin: 20px calc((100% - 80px)/2);
+}
+
+.category .row div .courses{
+    margin-top: 40px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding-top: 0px;
+}
+
+.category .row div:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.category .row div:hover h2{
+    color: var(--white);
+}
+
+.courses .card-body{
+    text-align: center;
+}
+.courses .card {
+    border-radius: none;
+    margin-bottom: 20px;
+}
+.courses .card-body p ,
+.courses .card-body {
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.courses .card-body .price{
+    color: var(--black)
+}
+.courses .card:hover ,
+.pricing .card:hover ,
+.reviews .card:hover ,
+.blogs .card:hover{
+    box-shadow: 0px 0px 10px var(--main-color);
+    cursor: pointer;
+}
+
+.courses .card-body .instructor ,
+.courses .card-body h2{
+    font-weight: bold;
+}
+
+
+.pricing .card-body {
+    text-align: center;
+    height: 400px;
+}
+
+.pricing .card{
+    margin-bottom: 20px;;
+}
+
+.pricing .card-title {
+    font-size: 20px;
+}
+
+.pricing .card-body .price {
+    font-size: 60px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.pricing span{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.pricing .button{
+    margin-top: 20px;
+}
+
+.reviews .card ,
+.blogs .card{
+    text-align: center;
+    height: 320px;
+    margin-bottom: 20px;
+}
+.reviews .data ,
+.blogs .data{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.reviews .data img ,
+.blogs .data img{
+    width: 20px;
+    height: 20px;
+    display: inline;
+
+}
+
+.reviews .card-title,
+.blogs .card-title{
+    margin-top: 20px;
+    font-weight: bold;;
+    color: var(--main-color);
+}
+
+.reviews .data p,
+.blogs .data p{
+    display: inline;
     margin-left: 10px;
 
 }
-.category .row .card h3 ,
-.category .row .card p ,
-.courses .row .card h3 ,
-.courses .row .card p{
-    margin-left: 20px;
-}
 
 
-.category .row .card h3 ,
-.courses .row .card h3 {
+.reviews .person {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-top: 20px;
-    font-size: 25px;
+    margin-left: calc((100% - 100px)/2);
+}
+
+.blogs .card{
+    height: 450px;
+}
+.blogs .person{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
 }
 
 
-.category .row .card:hover ,
-.courses .row .card:hover{
+/* contact */
+.contact  input ,
+.contact textarea{ 
+    border : none;
+    color: var(--main-color) !important;
+}
+
+.contact {
+    margin: auto;
+}
+.contact  input:focus ,
+.contact textarea:focus{
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+}
+
+
+
+.footer-out {
+    margin-top: 50px;
+    background-color: var(--main-color);
+}
+.footer-out .container{
+    padding: 20px;
+   
+    color: var(--white);
+    text-align: center;
+}
+
+.footer-out .container ul  a{
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.footer-out .container ul  a:hover{
+    color: var(--white);
+    text-decoration: none;
     cursor: pointer;
-    transform:scale(1.008);
-    box-shadow: 0px 0px 8px 0px var(--main-color);
+    margin-left: 5px;
 }
-
+.footer-out .Zainab p{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondary-color)
+}
 
